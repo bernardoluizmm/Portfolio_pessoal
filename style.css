@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h2.titulo{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+h2.titulo span{
+    color: rgb(156, 142, 10);
+}
+
+header{
+    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+}
+
+header > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+}
+
+header a{
+    color: rgb(117, 117, 117);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 50px;
+}
+
+section.topo-do-site{
+    padding: 20px 4%;
+}
+
+.central-inicio{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.nome-fundo{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: rgb(117, 117, 117);
+    font-size: 3.4rem;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.img-topo{
+    position: relative;
+    z-index: 2;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+}
+
+.img-topo img{
+    display: block;
+    width: 320px;
+    max-width: 100%;
+    margin-top: -60px auto;
+}
+
+.img-topo:hover{
+    opacity: 0.12;
+}
+
+.txt-topo{
+    max-width: 700px;
+    margin: 10px auto 0;
+    text-align: justify;
+    color:rgb(255, 255, 255);
+}
+
+section.linguagens{
+    padding: 40px 4%;
+}
+
+section.linguagens .flex{
+    gap: 120px;
+}
+
+section.linguagens .linguagens-box{
+    color:rgb(255, 255, 255);
+    padding: 100px;
+    font-size: 19px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 180px;
+    padding: 45px;
+    margin-top: 20px;
+    transition: .2s;
+}
+
+.linguagens-box img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+section.linguagens .linguagens-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgb(105, 105, 105);
+}
+
+section.sobre-mim{
+    padding: 40px 4%;
+}
+
+section.sobre-mim .flex{
+    gap: 140px;
+} 
+
+.sobre-mim .img-sobre img{
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.sobre-mim .txt-sobre{
+    max-width: 700px;
+    margin: 20px auto 10px;
+    text-align: justify;
+    color:rgb(255, 255, 255);
+}
+
+.sobre-mim .txt-sobre h2{
+    margin-bottom: 110px;
+}
+
+.sobre-mim .txt-sobre .letra-M{
+    color: rgb(230, 11, 11);
+}
+
+.sobre-mim .txt-sobre .destaque{
+    color: rgb(156, 142, 10);
+}
+
+section.projetos{
+    padding: 40px 4%;
+}
+
+.projetos .flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card-projeto-1,
+.card-projeto-2,
+.card-projeto-3 {
+    width: 400px;
+    text-align: center;
+    color: white;
+}
+
+.card-projeto-1 img,
+.card-projeto-2 img,
+.card-projeto-3 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.card-projeto-1 img:hover,
+.card-projeto-2 img:hover,
+.card-projeto-3 img:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.card-projeto-1 h3,
+.card-projeto-2 h3,
+.card-projeto-3 h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.card-projeto-1 p,
+.card-projeto-2 p,
+.card-projeto-3 p {
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 360px;
+}
+
+section.contato{
+    padding: 40px 4%;
+}
+
+.contato .flex{
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.contato .btn-social button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.btn-social button:hover{
+    background-color: rgb(156, 142, 10);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.email{
+    font-size:40px;
+}
+
+.email h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
